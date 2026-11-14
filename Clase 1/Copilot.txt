@@ -1,0 +1,123 @@
+--  Laboratorio 1 --
+
+Actúa como un ingeniero Java senior.
+
+Analiza el archivo pom.xml de este proyecto.
+
+Necesito que:
+1. Identifiques la versión de Java.
+2. Identifiques Spring Boot.
+3. Expliques las dependencias principales.
+4. Indiques qué herramientas necesito para compilarlo.
+5. Señales posibles problemas de compatibilidad.
+
+No modifiques archivos.
+No inventes dependencias.
+Responde mediante una tabla.
+
+
+-- Laboratorio 2 --
+
+Actúa como arquitecto de software Java.
+
+Analiza las clases StudentController, StudentService,
+StudentRepository, StudentMapper y Student.
+
+Explica:
+1. La arquitectura utilizada.
+2. La responsabilidad de cada clase.
+3. El flujo para registrar un estudiante.
+4. Los principios SOLID observables.
+5. Posibles oportunidades de mejora.
+
+Distingue hechos confirmados de recomendaciones.
+No inventes clases ni endpoints.
+No generes ni modifiques código.
+
+Presenta un diagrama textual y una tabla.
+
+-- Laboratorio 3 --
+
+Actúa como desarrollador Java senior.
+
+Propón una clase StudentNameFormatter para este proyecto.
+
+Requisitos:
+- Crear un método estático format.
+- Recibir nombre, apellido paterno y materno.
+- Omitir valores null o vacíos.
+- Eliminar espacios sobrantes.
+- No modificar entidades ni DTO existentes.
+- Utilizar únicamente Java estándar.
+- Documentar con JavaDoc.
+- Incluir tres ejemplos de entrada y salida.
+
+Muestra el código propuesto, sin modificar archivos.
+
+-- Laboratorio 4 --
+
+Genera el prompt para las pruebas de JUnit y Mockito para la capa de servicicio: StudentService
+Genera el código correspondiente del prompt anterior.
+
+-- Laboratorio 5 --
+
+Analiza el requerimiento de buscar estudiantes
+por coincidencia parcial de apellido paterno.
+
+Contexto:
+Proyecto school-management, Java 25,
+Spring Boot 4.1.2 y PostgreSQL.
+
+Revisa los filtros que ya existen.
+
+Entrega:
+1. Historia de usuario.
+2. Reglas funcionales.
+3. Restricciones técnicas.
+4. Supuestos y decisiones pendientes.
+5. Criterios de aceptación Given/When/Then.
+6. Riesgos de compatibilidad.
+7. Archivos potencialmente afectados.
+
+No escribas ni modifiques código.
+
+-- Laboratorio 6 --
+
+/plan Diseña una ampliación de GET /api/v1/students.
+
+Nuevo parámetro opcional: paternalSurname
+
+Reglas:
+- Coincidencia parcial.
+- Ignorar diferencias entre mayúsculas y minúsculas.
+- Conservar page, size, active y studentNumber.
+- No cambiar el formato PageResponse.
+- No crear nuevos endpoints innecesarios.
+- No modificar el esquema de PostgreSQL.
+
+Entrega el contrato HTTP, ejemplos, archivos afectados, criterios de aceptación y posibles riesgos de compatibilidad.
+
+No implementes nada.
+
+-- Laboratorio 7 --
+
+/plan Analiza las validaciones y excepciones de school-management.
+
+Revisa los DTO actuales, StudentController y GlobalExceptionHandler.
+
+Diseña la validación de paternalSurname:
+- Parámetro opcional.
+- Máximo 100 caracteres.
+- Entrada vacía equivale a filtro ausente.
+- Entradas inválidas deben generar 400.
+- Mantener ProblemDetail.
+
+Distingue errores 400, 404 y 409.
+Señala lo que ya existe y lo que falta.
+
+Entrega matriz de reglas y plan de pruebas.
+No modifiques archivos.
+
+
+
+
